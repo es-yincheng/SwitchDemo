@@ -28,9 +28,9 @@
 }
 
 - (IBAction)enableMode:(UISwitch *)sender {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setBool:sender.isOn forKey:@"modeUserDefaultKey"];
-    [defaults synchronize];
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    [defaults setBool:sender.isOn forKey:@"modeUserDefaultKey"];
+//    [defaults synchronize];
     
     [UIView animateWithDuration:1.0 animations:^{
         [self updateConstraints];
