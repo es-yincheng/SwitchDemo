@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvi-zL-6fH">
+                                <rect key="frame" x="276" y="20" width="51" height="31"/>
+                                <connections>
+                                    <action selector="enableMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="euy-xJ-1hQ"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRq-A4-r7s">
+                                <rect key="frame" x="20" y="74" width="277" height="506"/>
+                                <color key="backgroundColor" red="1" green="0.81126228659999999" blue="0.99868809150000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofn-ST-Mmx">
+                                <rect key="frame" x="303" y="74" width="277" height="506"/>
+                                <color key="backgroundColor" white="0.75905172409999999" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oRq-A4-r7s" secondAttribute="bottom" constant="20" id="OCY-CT-alI"/>
+                            <constraint firstItem="nvi-zL-6fH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OZW-XG-Xps"/>
+                            <constraint firstItem="nvi-zL-6fH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qfq-8x-613"/>
+                            <constraint firstItem="ofn-ST-Mmx" firstAttribute="leading" secondItem="oRq-A4-r7s" secondAttribute="trailing" constant="6" id="RHC-km-4ae"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ofn-ST-Mmx" secondAttribute="bottom" constant="20" id="V74-IE-Fco"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oRq-A4-r7s" secondAttribute="trailing" priority="750" id="ZN1-fc-KIp"/>
+                            <constraint firstItem="oRq-A4-r7s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cBJ-a9-eqh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ofn-ST-Mmx" secondAttribute="trailing" priority="750" id="f3X-HH-Tan"/>
+                            <constraint firstItem="ofn-ST-Mmx" firstAttribute="top" secondItem="nvi-zL-6fH" secondAttribute="bottom" constant="23" id="oiH-Ip-MDn"/>
+                            <constraint firstItem="ofn-ST-Mmx" firstAttribute="width" secondItem="oRq-A4-r7s" secondAttribute="width" id="sss-w0-qoY"/>
+                            <constraint firstItem="oRq-A4-r7s" firstAttribute="top" secondItem="nvi-zL-6fH" secondAttribute="bottom" constant="23" id="tcF-nN-2NE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueViewConstraint" destination="f3X-HH-Tan" id="1yI-am-EG3"/>
+                        <outlet property="modeSwitch" destination="nvi-zL-6fH" id="6ZM-gu-SCy"/>
+                        <outlet property="redViewConstraint" destination="ZN1-fc-KIp" id="SiU-LE-pN6"/>
+                        <outlet property="viewSpacingContraint" destination="RHC-km-4ae" id="1KK-CS-WLV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="339"/>
+        </scene>
+    </scenes>
+</document>
